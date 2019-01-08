@@ -1,0 +1,39 @@
+.insight-our-services {
+    background: #fff;
+    text-align: center;
+    padding: 40px 30px;
+    a {
+
+    }
+    .icon {
+        color: $color__primary;
+        font-size: 68px;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $color__dark-gray;
+        margin-bottom: 10px;
+    }
+    .content {
+        color: #696969;
+    }
+    .more {
+        color: $color__primary;
+        margin-top: 15px;
+        font-size: 24px;
+        opacity: .5;
+        @include transit;
+    }
+    &:hover {
+        .more {
+            opacity: 1;
+        }
+        .icon {
+            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+    }
+}

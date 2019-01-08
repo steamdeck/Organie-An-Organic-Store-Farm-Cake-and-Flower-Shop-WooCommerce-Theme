@@ -1,0 +1,44 @@
+.copyright {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    &.dark_style {
+        .copyright-container {
+            border-color: #404040;
+        }
+    }
+    .copyright-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 2px solid #f4f4f4;
+    }
+    .copyright-left {
+        font-size: 14px;
+        color: #ababab;
+        font-family: $font__second;
+        font-style: italic;
+        line-height: 1;
+        span {
+            color: $color__primary;
+        }
+    }
+    .copyright-right {
+        text-align: right;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                a {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

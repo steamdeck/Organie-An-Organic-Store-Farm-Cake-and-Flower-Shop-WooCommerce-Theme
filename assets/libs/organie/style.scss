@@ -1,0 +1,412 @@
+@import "variables";
+
+@font-face {
+    font-family: 'organie';
+    src: url('#{$icomoon-font-path}/organie.eot?6xqxl7');
+    src: url('#{$icomoon-font-path}/organie.eot?6xqxl7#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/organie.ttf?6xqxl7') format('truetype'),
+    url('#{$icomoon-font-path}/organie.woff?6xqxl7') format('woff'),
+    url('#{$icomoon-font-path}/organie.svg?6xqxl7#organie') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="organie-"], [class*=" organie-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'organie' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.organie-flower-1 {
+    &:before {
+        content: $organie-flower-1;
+    }
+}
+
+.organie-flower-2 {
+    &:before {
+        content: $organie-flower-2;
+    }
+}
+
+.organie-flower-3 {
+    &:before {
+        content: $organie-flower-3;
+    }
+}
+
+.organie-flower-4 {
+    &:before {
+        content: $organie-flower-4;
+    }
+}
+
+.organie-flower-5 {
+    &:before {
+        content: $organie-flower-5;
+    }
+}
+
+.organie-flower-6 {
+    &:before {
+        content: $organie-flower-6;
+    }
+}
+
+.organie-flower-7 {
+    &:before {
+        content: $organie-flower-7;
+    }
+}
+
+.organie-flower-8 {
+    &:before {
+        content: $organie-flower-8;
+    }
+}
+
+.organie-flower-9 {
+    &:before {
+        content: $organie-flower-9;
+    }
+}
+
+.organie-flower-10 {
+    &:before {
+        content: $organie-flower-10;
+    }
+}
+
+.organie-flower-11 {
+    &:before {
+        content: $organie-flower-11;
+    }
+}
+
+.organie-flower-12 {
+    &:before {
+        content: $organie-flower-12;
+    }
+}
+
+.organie-flower-13 {
+    &:before {
+        content: $organie-flower-13;
+    }
+}
+
+.organie-flower-14 {
+    &:before {
+        content: $organie-flower-14;
+    }
+}
+
+.organie-cactus {
+    &:before {
+        content: $organie-cactus;
+    }
+}
+
+.organie-plant-2 {
+    &:before {
+        content: $organie-plant-2;
+    }
+}
+
+.organie-plant-3 {
+    &:before {
+        content: $organie-plant-3;
+    }
+}
+
+.organie-plant-4 {
+    &:before {
+        content: $organie-plant-4;
+    }
+}
+
+.organie-plant {
+    &:before {
+        content: $organie-plant;
+    }
+}
+
+.organie-plant1 {
+    &:before {
+        content: $organie-plant1;
+    }
+}
+
+.organie-apple {
+    &:before {
+        content: $organie-apple;
+    }
+}
+
+.organie-banana {
+    &:before {
+        content: $organie-banana;
+    }
+}
+
+.organie-basket {
+    &:before {
+        content: $organie-basket;
+    }
+}
+
+.organie-blender {
+    &:before {
+        content: $organie-blender;
+    }
+}
+
+.organie-bread {
+    &:before {
+        content: $organie-bread;
+    }
+}
+
+.organie-broccoli {
+    &:before {
+        content: $organie-broccoli;
+    }
+}
+
+.organie-carrot {
+    &:before {
+        content: $organie-carrot;
+    }
+}
+
+.organie-coconut {
+    &:before {
+        content: $organie-coconut;
+    }
+}
+
+.organie-corn {
+    &:before {
+        content: $organie-corn;
+    }
+}
+
+.organie-cucumber {
+    &:before {
+        content: $organie-cucumber;
+    }
+}
+
+.organie-egg {
+    &:before {
+        content: $organie-egg;
+    }
+}
+
+.organie-eggplant {
+    &:before {
+        content: $organie-eggplant;
+    }
+}
+
+.organie-ekobag {
+    &:before {
+        content: $organie-ekobag;
+    }
+}
+
+.organie-grain {
+    &:before {
+        content: $organie-grain;
+    }
+}
+
+.organie-grape {
+    &:before {
+        content: $organie-grape;
+    }
+}
+
+.organie-honey {
+    &:before {
+        content: $organie-honey;
+    }
+}
+
+.organie-jam {
+    &:before {
+        content: $organie-jam;
+    }
+}
+
+.organie-leaf {
+    &:before {
+        content: $organie-leaf;
+    }
+}
+
+.organie-lemon {
+    &:before {
+        content: $organie-lemon;
+    }
+}
+
+.organie-lettuce {
+    &:before {
+        content: $organie-lettuce;
+    }
+}
+
+.organie-milk {
+    &:before {
+        content: $organie-milk;
+    }
+}
+
+.organie-mushrooms {
+    &:before {
+        content: $organie-mushrooms;
+    }
+}
+
+.organie-onion {
+    &:before {
+        content: $organie-onion;
+    }
+}
+
+.organie-pear {
+    &:before {
+        content: $organie-pear;
+    }
+}
+
+.organie-pepper {
+    &:before {
+        content: $organie-pepper;
+    }
+}
+
+.organie-radish {
+    &:before {
+        content: $organie-radish;
+    }
+}
+
+.organie-smoothie {
+    &:before {
+        content: $organie-smoothie;
+    }
+}
+
+.organie-squeezer {
+    &:before {
+        content: $organie-squeezer;
+    }
+}
+
+.organie-tomato {
+    &:before {
+        content: $organie-tomato;
+    }
+}
+
+.organie-watermelon {
+    &:before {
+        content: $organie-watermelon;
+    }
+}
+
+.organie-hours-support {
+    &:before {
+        content: $organie-hours-support;
+    }
+}
+
+.organie-arrow-01 {
+    &:before {
+        content: $organie-arrow-01;
+    }
+}
+
+.organie-barn {
+    &:before {
+        content: $organie-barn;
+    }
+}
+
+.organie-credit-card {
+    &:before {
+        content: $organie-credit-card;
+    }
+}
+
+.organie-decor {
+    &:before {
+        content: $organie-decor;
+    }
+}
+
+.organie-delivery {
+    &:before {
+        content: $organie-delivery;
+    }
+}
+
+.organie-drop {
+    &:before {
+        content: $organie-drop;
+    }
+}
+
+.organie-flower {
+    &:before {
+        content: $organie-flower;
+    }
+}
+
+.organie-leaves_2 {
+    &:before {
+        content: $organie-leaves_2;
+    }
+}
+
+.organie-leaves {
+    &:before {
+        content: $organie-leaves;
+    }
+}
+
+.organie-map-location {
+    &:before {
+        content: $organie-map-location;
+    }
+}
+
+.organie-path-footer {
+    &:before {
+        content: $organie-path-footer;
+    }
+}
+
+.organie-tractor {
+    &:before {
+        content: $organie-tractor;
+    }
+}
+
+.organie-watercolor {
+    &:before {
+        content: $organie-watercolor;
+    }
+}
+

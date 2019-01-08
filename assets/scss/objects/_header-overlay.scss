@@ -1,0 +1,5 @@
+.header-overlay {
+    .header:not(.headroom--not-top), &.header:not(.headroom--not-top) {
+        background: rgba(33, 33, 33, 0) !important;
+    }
+}

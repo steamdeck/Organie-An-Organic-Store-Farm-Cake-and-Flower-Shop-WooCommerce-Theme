@@ -1,0 +1,90 @@
+.insight-accordion {
+    .item {
+        margin-bottom: 15px;
+        background: #f8f7f7;
+        border-radius: 4px;
+        overflow: hidden;
+        .title {
+            background: #f8f7f7;
+            color: $color__dark-gray;
+            font-weight: 700;
+            padding: 15px 30px;
+            position: relative;
+            cursor: pointer;
+            @include transit;
+            .icon {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                i {
+                    color: $color__primary;
+                    font-style: normal;
+                    font-size: 15px;
+                    font-weight: 400;
+                    &.icon-default {
+                        font-family: Ionicons !important;
+                        &:before {
+                            content: '\f216';
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            height: 0;
+            padding: 0 30px;
+            line-height: 1.6;
+            @include transit;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &.active {
+            .title {
+                background: $color__primary;
+                color: #fff;
+                .icon {
+                    i {
+                        color: #fff;
+                        &.icon-default {
+                            &:before {
+                                content: '\f207';
+                            }
+                        }
+                    }
+                }
+            }
+            .content {
+                height: auto;
+                padding: 20px 30px;
+            }
+        }
+        &:hover {
+            .title {
+                background: $color__primary;
+                color: #fff;
+                .icon {
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &.insight-accordion-left {
+        .title {
+            padding-left: 60px;
+            .icon {
+                left: 30px;
+                right: auto;
+            }
+        }
+    }
+    &.insight-accordion-right {
+        .title {
+            padding-right: 60px;
+        }
+    }
+}

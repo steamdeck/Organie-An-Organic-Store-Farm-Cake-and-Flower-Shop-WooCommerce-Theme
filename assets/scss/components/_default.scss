@@ -1,0 +1,43 @@
+.page-title {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: #333;
+    text-align: center;
+    background-color: #f8f7f7;
+    background-image: url("assets/images/big_title_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    .title {
+        font-family: $font__main;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: 0.1em;
+        color: #333;
+        text-transform: uppercase;
+    }
+}
+
+.content-area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+body.no-padding {
+    .content-area {
+        padding-top: 0;
+        padding-bottom: 0;
+        .entry-content {
+            margin-bottom: 0;
+        }
+    }
+    article {
+        margin-bottom: 0;
+    }
+}
+
+.display_none {
+    display: none;
+}

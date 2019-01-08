@@ -1,0 +1,23 @@
+.insight-carousel {
+    &--slide {
+        outline: none;
+        img {
+            margin: 0 auto;
+            opacity: .7;
+            @include transit;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+    .slick-track {
+        @extend .row;
+        @extend .row-xs-center;
+    }
+}
+
+.slick-track {
+    min-width: 100%;
+}

@@ -1,0 +1,122 @@
+.insight-process {
+    display: block;
+    text-align: center;
+
+    .insight-process-step {
+        display: inline-block;
+        text-align: center;
+
+        .title {
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            font-weight: bold;
+            color: #333;
+            margin-top: 23px;
+        }
+        .text {
+            font-size: 15px;
+        }
+
+        .process-icon {
+            @extend .vertical-center;
+            justify-content: center;
+            font-size: 60px;
+            height: 110px;
+            width: 110px;
+            color: $color__primary;
+            margin: 0 auto;
+            position: relative;
+            @include border-radius(50%);
+            @include transit;
+            i {
+                //position: absolute;
+                @include transit;
+                // top: 30px;
+                // left: 50%;
+                //margin-left: -20px;
+            }
+            &:hover {
+                background-color: $color__primary;
+                overflow: visible;
+                &:before {
+                    animation: spinner 6s linear infinite;
+                    -webkit-animation: spinner 6s linear infinite;
+                }
+                i {
+                    color: #fff;
+                }
+            }
+            &:before {
+                @extend .organie-font;
+                position: absolute;
+                left: -10px;
+                top: -10px;
+                content: "\e922";
+                font-size: 130px;
+                opacity: .5;
+            }
+        }
+
+        &.step-2, &.step-3, &.step-4 {
+            @include media-breakpoint-down(md) {
+                margin-top: 40px;
+            }
+            position: relative;
+            .process-icon {
+                &:after {
+                    @include media-breakpoint-down(md) {
+                        display: none
+                    }
+                    @extend .organie-font;
+                    content: "\e91f";
+                    opacity: .3;
+                    color: $color__primary;
+                    font-size: 130px;
+                    position: absolute;
+                }
+            }
+        }
+
+        &.step-1 {
+            @include media-breakpoint-up(md) {
+                margin-top: 180px;
+            }
+        }
+        &.step-2 {
+            .process-icon {
+                &:after {
+                    bottom: -100px;
+                    left: -150px;
+                }
+            }
+        }
+        &.step-3 {
+            .process-icon {
+                &:after {
+                    top: 50px;
+                    left: -140px;
+                    transform: rotateX(180deg) rotate(30deg);
+                    font-size: 115px;
+                }
+            }
+        }
+        &.step-4 {
+            @include media-breakpoint-up(md) {
+                margin-top: 230px;
+            }
+            .process-icon {
+                &:after {
+                    top: -150px;
+                    left: -130px;
+                    transform: rotate(70deg);
+                }
+            }
+        }
+    }
+
+    .main-img {
+        @include media-breakpoint-up(md) {
+            margin-top: -250px;
+        }
+    }
+}

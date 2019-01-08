@@ -1,0 +1,168 @@
+.insight-flower-single-product {
+    display: block;
+    width: 100%;
+    .product-thumb {
+        background-color: #fff;
+        padding: 60px 10px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        img {
+            @include transit;
+            @include scale(1.1);
+        }
+    }
+    .product-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $font__second;
+        color: #333;
+        display: block;
+        text-align: center;
+        margin-top: -23px;
+        padding-bottom: 10px;
+        position: relative;
+        a {
+            color: #333;
+        }
+        &:after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: #ababab;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            @include transit;
+        }
+    }
+    .product-price {
+        font-family: $font__second;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        line-height: 1;
+        color: #696969;
+        margin-top: 25px;
+    }
+    .add_to_cart_inline {
+        z-index: 98;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        @include transit;
+        .amount {
+            display: none;
+        }
+        .woocommerce_loop_add_to_cart_span {
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            @include transit;
+            a {
+                background-color: $color__primary;
+                width: 48px;
+                height: 48px;
+                text-align: center;
+                line-height: 48px;
+                @include border-radius(24px);
+                display: block;
+                overflow: hidden;
+                font-size: 0;
+                &.wc-forward {
+                    display: none;
+                }
+                &.add_to_cart_button {
+                    &:before {
+                        content: '\f3f8' !important;
+                        color: #fff;
+                        font-size: 18px;
+                        width: 48px;
+                        height: 48px;
+                        line-height: 48px;
+                        display: inline-block;
+                        font-family: "Ionicons";
+                        speak: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                    &.loading {
+                        &:before {
+                            content: '\f459' !important;
+                            animation: spinner 1.5s linear infinite !important;
+                            -webkit-animation: spinner 1.5s linear infinite !important;
+                        }
+                    }
+                    &.added {
+                        &:before {
+                            content: '\f3ff' !important;
+                        }
+                    }
+                    &.product_type_variable {
+                        &:before {
+                            content: '\f4a6' !important;
+                        }
+                    }
+                }
+                &.product_type_simple {
+                    &:before {
+                        content: '\f39c';
+                        font-family: Ionicons;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 400;
+                        speak: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        .product-thumb {
+            img {
+                @include scale(1.2);
+                opacity: .3;
+            }
+        }
+        .product-title {
+            a {
+                color: $color__primary;
+            }
+            &:after {
+                background-color: $color__primary;
+                width: 60px;
+            }
+        }
+        .add_to_cart_inline {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+}

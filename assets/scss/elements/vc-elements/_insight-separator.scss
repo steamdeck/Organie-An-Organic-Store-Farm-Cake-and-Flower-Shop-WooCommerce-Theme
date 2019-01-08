@@ -1,0 +1,21 @@
+.insight-separator {
+    max-width: 350px;
+    &--icon {
+        width: 70px;
+        text-align: center;
+        i {
+            font-size: 30px;
+            color: $color__primary;
+            display: inline-block;
+        }
+    }
+    .vc_sep_line {
+        border-color: #696969;
+    }
+    &:hover {
+        i {
+            animation: spinner 2s linear infinite;
+            -webkit-animation: spinner 2s linear infinite;
+        }
+    }
+}

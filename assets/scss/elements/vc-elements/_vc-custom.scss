@@ -1,0 +1,100 @@
+[class*='insight-dot'] {
+    cursor: pointer;
+}
+
+.insight-dot {
+    &-style01 {
+        font-size: 18px !important;
+        &:after {
+            @include transit;
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: $color__primary;
+            right: -100px;
+            top: 50%;
+            position: absolute;
+        }
+        &.active {
+            font-size: 34px !important;
+            color: #333 !important;
+            &:after {
+                width: 80px;
+            }
+        }
+        &:hover {
+            color: #333 !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .relative-visible {
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    .static-visible {
+        position: static !important;
+        overflow: visible !important;
+    }
+}
+
+[class*='absolute-object'] {
+    position: absolute !important;
+    z-index: 2;
+}
+
+.absolute-object1 {
+    right: 0;
+}
+
+.absolute-object2 {
+    right: 0;
+    top: -350px;
+}
+
+.absolute-object3 {
+    left: 0;
+    top: -200px;
+}
+
+.absolute-object4 {
+    right: 0;
+    top: -300px;
+}
+
+.absolute-object5 {
+    left: 0;
+    bottom: -150px;
+}
+
+.absolute-object6 {
+    right: 0;
+    bottom: -50px;
+}
+
+.absolute-object7 {
+    left: 0;
+    bottom: -150px;
+}
+
+@include media-breakpoint-down(md) {
+    [class*='absolute-object'] {
+        max-width: 100px;
+        top: -100px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    [class*='absolute-object'] {
+        display: none !important;
+    }
+}
+
+.img-full-100 {
+    .vc_figure, .vc_figure img {
+        width: 100% !important;
+    }
+}

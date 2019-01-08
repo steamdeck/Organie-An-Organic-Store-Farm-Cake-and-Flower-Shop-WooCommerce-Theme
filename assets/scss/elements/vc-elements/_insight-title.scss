@@ -1,0 +1,125 @@
+.insight-title {
+    min-height: 124px;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+    .main-title {
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        color: #333;
+        line-height: 1;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        font-weight: inherit;
+        font-style: inherit;
+    }
+    .sub-title {
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        font-family: $font__second;
+        font-weight: 400;
+        line-height: 1.2;
+        font-style: italic;
+    }
+    &.text-left {
+        text-align: left;
+    }
+    &.text-center {
+        text-align: center;
+    }
+    &.text-right {
+        text-align: right;
+    }
+    &.has-bg {
+        &:before {
+            content: '';
+            display: block;
+            width: 157px;
+            height: 125px;
+            background: url('assets/images/title-icon.png') no-repeat center center;
+            position: absolute;
+            left: 50%;
+            right: auto;
+            top: 0;
+            transform: translateX(-50%);
+            z-index: 1;
+            opacity: .2;
+        }
+        &.text-left {
+            &:before {
+                left: 30px;
+                right: auto;
+                transform: translateX(0);
+            }
+        }
+        &.text-right {
+            &:before {
+                left: auto;
+                right: 30px;
+                transform: translateX(0);
+            }
+        }
+    }
+    &.has-line {
+        .main-title {
+            padding: 0 45px;
+            &:before, &:after {
+                content: '';
+                width: 2000px;
+                height: 5px;
+                background: url('assets/images/title-line.png') repeat-x center center;
+                position: absolute;
+            }
+            &:before {
+                top: 50%;
+                right: 100%;
+            }
+            &:after {
+                top: 50%;
+                left: 100%;
+            }
+        }
+        &.text-left {
+            .main-title {
+                padding-left: 0;
+            }
+        }
+        &.text-right {
+            .main-title {
+                padding-right: 0;
+            }
+        }
+    }
+    &.font-56 {
+        padding-top: 30px;
+        .main-title {
+            font-size: 56px;
+        }
+    }
+    &.font-48 {
+        .main-title {
+            font-size: 48px;
+        }
+    }
+    &.font-secondary {
+        .main-title {
+            font-family: $font__second;
+        }
+    }
+    &.text-uppercase {
+        .main-title {
+            text-transform: uppercase;
+        }
+    }
+
+    &.cake-style {
+        .main-title {
+            letter-spacing: 0.2em;
+            line-height: 1.7em;
+        }
+        .sub-title {
+            margin-top: 20px;
+        }
+    }
+}

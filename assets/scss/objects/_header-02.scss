@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+# Header 02
+--------------------------------------------------------------*/
+header.header-02 {
+    .header-container {
+        position: relative;
+        .header-logo {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .header-nav {
+            position: relative;
+            text-align: center;
+            border-top: 1px solid #f4f4f4;
+            nav {
+                display: inline-block;
+                .menu__container {
+                    position: static !important;
+                }
+            }
+            .btn-wrap {
+                display: inline-block;
+                position: relative;
+                height: 24px;
+                .mini-cart-wrap {
+                    display: inline-block;
+                    margin-left: 20px;
+                    height: 24px;
+                    float: right;
+                    .mini-cart {
+                        margin-right: 0;
+                        margin-bottom: -3px;
+                        .mini-cart-icon {
+                            font-size: 18px;
+                            line-height: 1;
+                            margin-right: 0;
+                            &:after {
+                                top: -8px;
+                            }
+                        }
+                        .mini-cart-text {
+                            display: none;
+                        }
+                    }
+                }
+                .top-search-btn-wrap {
+                    display: inline-block;
+                    height: 24px;
+                    border-right: 1px solid #eeeeee;
+                    margin-right: 0;
+                    padding-right: 20px;
+                    margin-left: 20px;
+                    .top-search-btn {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                        text-align: right;
+                        margin-bottom: -5px;
+                        &:before {
+                            content: "\f4a4";
+                            font-family: Ionicons;
+                            font-size: 18px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #menu .menu__container > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    nav.menu {
+        text-align: center;
+        li {
+            a {
+                text-transform: uppercase;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    nav.menu {
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    &.headroom--not-top {
+        .header-logo {
+            display: none;
+        }
+        .header-nav {
+            border-top: none;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+}

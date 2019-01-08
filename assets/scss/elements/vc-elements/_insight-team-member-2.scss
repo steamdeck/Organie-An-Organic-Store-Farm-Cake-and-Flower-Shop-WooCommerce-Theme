@@ -1,0 +1,35 @@
+.insight-team-member-2 {
+    padding: 90px 100px;
+    @include media-breakpoint-down(md) {
+        padding: 40px 30px;
+    }
+    background-color: #fff;
+    .member-image {
+
+    }
+    .member-info {
+        text-align: center;
+        align-self: center;
+        padding: 20px 0 20px 70px;
+        @include media-breakpoint-down(md) {
+            padding-left: 0;
+        }
+        .title, .name {
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.2em;
+        }
+        .title {
+            font-size: 16px;
+        }
+        .name {
+            font-size: 48px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .insight-social {
+            margin-top: 80px;
+        }
+    }
+}

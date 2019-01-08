@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Header mobile
+--------------------------------------------------------------*/
+header.header-mobile {
+    display: none;
+    padding: 30px 0;
+    width: 100%;
+    .top-search {
+        margin-bottom: 30px;
+    }
+    .header-left {
+        font-size: 24px;
+        text-align: left;
+        #open-left {
+            cursor: pointer;
+        }
+    }
+    .header-center {
+        text-align: center;
+    }
+    .header-right {
+        text-align: right;
+        .mini-cart-wrap {
+            vertical-align: middle;
+            display: inline-block;
+            height: 24px;
+            .mini-cart {
+                padding-right: 10px;
+                .mini-cart-icon {
+                    margin-right: 0;
+                    &:after {
+                        top: 0;
+                    }
+                }
+            }
+        }
+        .top-search-btn-wrap {
+            display: inline-block;
+            vertical-align: middle;
+            height: 24px;
+            margin-left: 20px;
+            .top-search-btn {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                text-align: left;
+                &:before {
+                    content: "\f4a5";
+                    font-family: Ionicons;
+                    font-size: 24px;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    header.header-mobile {
+        display: block;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    header.header-mobile {
+        .mini-cart-wrap .mini-cart .mini-cart-text {
+            display: none;
+        }
+    }
+}

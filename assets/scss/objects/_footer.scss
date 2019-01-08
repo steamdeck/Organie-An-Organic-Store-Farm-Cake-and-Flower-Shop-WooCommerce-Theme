@@ -1,0 +1,106 @@
+.footer {
+    display: block;
+    width: 100%;
+    .widget {
+        @include res-margin-bottom(20, 0);
+        .widget-title {
+            margin-bottom: 30px;
+            padding-bottom: 0;
+            color: $color__dark-gray;
+            font-family: $font__second;
+            font-size: 18px;
+            letter-spacing: .05em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                margin-bottom: 15px;
+                line-height: 1.6;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    position: relative;
+                    &:hover {
+                        padding-left: 20px;
+                        &:before {
+                            position: absolute;
+                            content: '\f462';
+                            font-family: 'Ionicons';
+                            left: 0;
+                            top: 0;
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    li {
+        margin-bottom: 15px;
+    }
+    .textwidget {
+        line-height: 1.6;
+        p {
+            padding: 0;
+            margin: 0 0 10px 0;
+        }
+        i {
+            font-size: 18px;
+            color: #ababab;
+            width: 20px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        a {
+            color: $color__primary;
+        }
+    }
+    .footer-social {
+        margin-top: 30px;
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            text-align: center;
+            border: 1px solid #f4f4f4;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #696969;
+            &:hover {
+                background-color: $color__primary;
+                border-color: $color__primary;
+                color: #fff !important;
+            }
+        }
+    }
+    .footer-c1, .footer-c2, .footer-c3, .footer-c4 {
+        margin-bottom: 30px;
+    }
+}
+
+.scrollup {
+    position: fixed;
+    right: 30px;
+    bottom: -50px;
+    z-index: 999;
+    display: block;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    cursor: pointer;
+    i {
+        height: 40px;
+        line-height: 40px;
+        display: block;
+    }
+    &.show {
+        bottom: 54px;
+    }
+}

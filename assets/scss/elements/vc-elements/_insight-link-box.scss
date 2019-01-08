@@ -1,0 +1,51 @@
+.insight-link-box {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    padding: 15px;
+    background-color: #fff;
+    margin: 0 auto;
+    &:hover {
+        .inner {
+            @include transit;
+            border-color: #999;
+        }
+    }
+    .inner {
+        border: 1px solid #efefef;
+        border-radius: 100%;
+        display: flex;
+        width: 270px;
+        height: 270px;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 10px;
+
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        h6 {
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 0.3em;
+            margin-bottom: 20px;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 0.4em;
+            margin-bottom: 20px;
+        }
+        h5 {
+            font-style: italic;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+        }
+    }
+}
+
+.bg-center .vc_column-inner {
+    background-position: center center !important;
+}

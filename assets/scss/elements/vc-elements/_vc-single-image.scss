@@ -1,0 +1,31 @@
+.wpb_single_image {
+    &.with-border {
+        &.cake-style {
+            .vc_single_image-wrapper {
+                &:before {
+                    border: 1px solid #333;
+                }
+            }
+        }
+        .vc_single_image-wrapper {
+            position: relative;
+
+            img {
+                position: relative;
+                z-index: 2;
+            }
+
+            &:before {
+                display: block;
+                content: '';
+                border: 7px solid #f8f7f7;
+                position: absolute;
+                z-index: 1;
+                top: 30px;
+                right: -30px;
+                bottom: -30px;
+                left: 40px;
+            }
+        }
+    }
+}

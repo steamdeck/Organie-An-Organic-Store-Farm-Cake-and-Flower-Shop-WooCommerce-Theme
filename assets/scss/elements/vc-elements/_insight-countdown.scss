@@ -1,0 +1,74 @@
+.insight-countdown {
+    .countdown-inner {
+        width: 100%;
+        overflow: hidden;
+        .countdown-timer {
+            margin-bottom: 0;
+            position: relative;
+            white-space: nowrap;
+            text-align: center;
+            & > div {
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                color: $color__primary;
+                font-size: 100px;
+                line-height: 1;
+                font-weight: 700;
+                font-family: $font__second;
+                margin: 0px 30px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:after {
+                    content: ':';
+                    display: inline-block;
+                    line-height: 1;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-left: -30px;
+                    font-size: 16px;
+                }
+                &:first-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+                span {
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 20px;
+                    position: relative;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-style: italic;
+                    font-family: $font__second;
+                    color: #797575;
+                    text-transform: lowercase;
+                    width: 100%;
+                    text-align: center;
+                    letter-spacing: 0.2em;
+                }
+            }
+        }
+    }
+    &.flower {
+        .countdown-inner {
+            .countdown-timer {
+                & > div {
+                    color: #333;
+                    font-size: 48px;
+                    span {
+                        font-size: 16px;
+                        color: $color__primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+}

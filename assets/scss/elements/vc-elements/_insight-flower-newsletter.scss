@@ -1,0 +1,53 @@
+.insight-flower-newsletter {
+    padding-top: 330px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    background-image: url("assets/images/flower/newsletter_bg_02.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+    .insight-flower-newsletter-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $font__second;
+        margin-bottom: 30px;
+        color: $color__gray-dark;
+        text-transform: capitalize;
+    }
+    .insight-flower-newsletter-shortcode {
+        max-width: 570px;
+        margin: 0 auto;
+        text-align: center;
+        [class*='col-'] {
+            width: 100%;
+            flex: none;
+            max-width: 100%;
+        }
+        input[type="email"], input[type="text"] {
+            height: 48px;
+            line-height: 48px;
+            background-color: #f8f7f7;
+            border-radius: 4px;
+            padding: 0 20px;
+            border: none;
+            display: inline-block;
+            @include transit;
+            text-align: center;
+        }
+        input[type="submit"], button[type="submit"] {
+            height: 48px;
+            line-height: 46px;
+            border-width: 1px;
+            border-radius: 24px;
+            padding: 0 30px;
+            margin-top: 30px;
+            font-size: 16px;
+            text-transform: uppercase;
+            @include transit;
+            &:hover {
+                background: none;
+                color: $color__primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+# Header 01
+--------------------------------------------------------------*/
+header.header-01 {
+    display: inline-block;
+    width: 100%;
+    .top-search {
+        padding: 0 15px;
+        text-align: center;
+        input {
+            text-align: center;
+        }
+    }
+    .header-container {
+        position: relative;
+        -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+        -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+        z-index: 999;
+        .row {
+            margin: 0;
+        }
+        .header-left {
+            padding-left: 100px;
+        }
+        .header-center {
+            position: static;
+            nav.menu {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    li {
+                        a {
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+        .header-right {
+            padding-right: 100px;
+            text-align: right;
+            .btn-wrap {
+                display: inline-block;
+                position: relative;
+                height: 24px;
+                .top-search-btn-wrap {
+                    float: left;
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 24px;
+                    .top-search-btn {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                        text-align: left;
+                        &:before {
+                            content: "\f4a5";
+                            font-family: Ionicons;
+                            font-size: 24px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .mini-cart-wrap {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 20px;
+                    padding-left: 20px;
+                    height: 24px;
+                    line-height: 24px;
+                    float: left;
+                    .mini-cart {
+                        position: relative;
+                        .mini-cart-icon {
+                            font-size: 24px;
+                            height: 24px;
+                            line-height: 24px;
+                            i {
+                                font-style: normal;
+                            }
+                            &:after {
+                                position: absolute;
+                                top: -4px;
+                                right: -8px;
+                            }
+                        }
+                        .mini-cart-text {
+                            display: none;
+                        }
+                    }
+                }
+                .right-panel-btn {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 20px;
+                    padding-left: 20px;
+                    font-size: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    cursor: pointer;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+}

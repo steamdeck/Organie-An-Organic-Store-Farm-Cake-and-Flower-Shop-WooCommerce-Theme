@@ -1,0 +1,222 @@
+.footer-newsletter {
+    &.footer-newsletter-style01 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: #f3f1ee;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        .footer-newsletter-left {
+            font-size: 34px;
+            font-weight: 700;
+            font-family: $font__second;
+            color: #333;
+            text-transform: capitalize;
+        }
+        .footer-newsletter-right {
+            input[type="email"], input[type="text"] {
+                height: 48px;
+                line-height: 48px;
+                background-color: #fff;
+                border-radius: 4px;
+                padding: 0 20px;
+                border: none;
+                display: inline-block;
+                @include transit;
+            }
+            input[type="submit"], button[type="submit"] {
+                height: 48px;
+                line-height: 46px;
+                border-width: 1px;
+                border-radius: 24px;
+                padding: 0 30px;
+                font-size: 16px;
+                text-transform: uppercase;
+                @include transit;
+                &:hover {
+                    background: none;
+                    color: $color__primary;
+                }
+            }
+        }
+    }
+    &.footer-newsletter-style02 {
+        .footer-newsletter-inner {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: #f3f1ee;
+            background-image: url("assets/images/newsletter_bg_02.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            text-align: center;
+            .footer-newsletter-title {
+                font-size: 24px;
+                font-weight: 700;
+                font-family: $font__second;
+                margin-bottom: 30px;
+                color: $color__gray-dark;
+                text-transform: capitalize;
+            }
+            .footer-newsletter-form {
+                max-width: 570px;
+                margin: 0 auto;
+                text-align: center;
+                [class*='col-'] {
+                    width: 100%;
+                    flex: none;
+                    max-width: 100%;
+                }
+                input[type="email"], input[type="text"] {
+                    height: 48px;
+                    line-height: 48px;
+                    background-color: #fff;
+                    border-radius: 4px;
+                    padding: 0 20px;
+                    border: none;
+                    display: inline-block;
+                    @include transit;
+                    text-align: center;
+                }
+                input[type="submit"], button[type="submit"] {
+                    height: 48px;
+                    line-height: 46px;
+                    border-width: 1px;
+                    border-radius: 24px;
+                    padding: 0 30px;
+                    margin-top: 30px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    @include transit;
+                    &:hover {
+                        background: none;
+                        color: $color__primary;
+                    }
+                }
+            }
+        }
+    }
+    &.footer-newsletter-style03 {
+        .footer-newsletter-inner {
+            padding-top: 330px;
+            padding-bottom: 60px;
+            background-color: #fff;
+            background-image: url("assets/images/flower/newsletter_bg_02.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+            text-align: center;
+            .footer-newsletter-title {
+                font-size: 24px;
+                font-weight: 700;
+                font-family: $font__second;
+                margin-bottom: 30px;
+                color: $color__gray-dark;
+                text-transform: capitalize;
+            }
+            .footer-newsletter-form {
+                max-width: 570px;
+                margin: 0 auto;
+                text-align: center;
+                [class*='col-'] {
+                    width: 100%;
+                    flex: none;
+                    max-width: 100%;
+                }
+                input[type="email"], input[type="text"] {
+                    height: 48px;
+                    line-height: 48px;
+                    background-color: #f8f7f7;
+                    border-radius: 4px;
+                    padding: 0 20px;
+                    border: none;
+                    display: inline-block;
+                    @include transit;
+                    text-align: center;
+                }
+                input[type="submit"], button[type="submit"] {
+                    height: 48px;
+                    line-height: 46px;
+                    border-width: 1px;
+                    border-radius: 24px;
+                    padding: 0 30px;
+                    margin-top: 30px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    @include transit;
+                    &:hover {
+                        background: none;
+                        color: $color__primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.newsletter-style01 {
+    form {
+        max-width: 570px;
+        margin: 0 auto;
+        text-align: center;
+        [class*='col-'] {
+            width: 100%;
+            flex: none;
+            max-width: 100%;
+        }
+        input[type="email"], input[type="text"] {
+            height: 48px;
+            line-height: 48px;
+            background-color: #f8f7f7;
+            border-radius: 4px;
+            padding: 0 20px;
+            border: none;
+            display: inline-block;
+            @include transit;
+            text-align: center;
+        }
+        input[type="submit"], button[type="submit"] {
+            height: 48px;
+            line-height: 46px;
+            border-width: 1px;
+            border-radius: 24px;
+            padding: 0 30px;
+            margin-top: 30px;
+            font-size: 16px;
+            text-transform: uppercase;
+            @include transit;
+            &:hover {
+                background: none;
+                color: $color__primary;
+            }
+        }
+    }
+}
+
+.newsletter-style02 {
+    form {
+        input[type="email"], input[type="text"] {
+            height: 48px;
+            line-height: 48px;
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 0 20px;
+            border: none;
+            display: inline-block;
+            @include transit;
+        }
+        input[type="submit"], button[type="submit"] {
+            height: 48px;
+            line-height: 46px;
+            border-width: 1px;
+            border-radius: 24px;
+            padding: 0 30px;
+            font-size: 16px;
+            text-transform: uppercase;
+            @include transit;
+            &:hover {
+                background: none;
+                color: $color__primary;
+            }
+        }
+    }
+}
