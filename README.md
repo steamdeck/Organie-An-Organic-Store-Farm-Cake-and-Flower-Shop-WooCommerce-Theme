@@ -1,0 +1,2 @@
+# Organie---An-Organic-Store--Farm--Cake-and-Flower-Shop-WooCommerce-Theme
+Organie is the only organic theme you’ll ever need cause it covers all business types like store, farm, cake or flower shop… Organie does not only obtain the high performance and effectiveness that a WooCommerce theme should have to attract customers. It’s better. Go exploring by yourself. 12+ Homepages We’ve made sure all homepage can impress your customers from the first look. You should check out our online documentation &amp; if still need any help, don’t forget to contact our developer directly
